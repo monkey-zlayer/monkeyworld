@@ -5,7 +5,9 @@
   <!-- Add some style using CSS -->
   <style>
     body {
-      background-image: url("https://cdn.pixabay.com/photo/2017/08/30/01/05/milky-way-2695569_960_720.jpg");
+      background-image: url("pix/R.jfif");
+      background-repeat: repeat;
+      background-size: 100% auto;
       font-family: "Comic Sans MS", cursive, sans-serif;
       animation: fade-in 2s;
       height: 200vh; /* make the body height twice the viewport height */
@@ -15,6 +17,13 @@
       color: yellow;
       text-align: center;
       font-size: 10em;
+      text-shadow: 5px 5px 10px black;
+      animation: bounce 1s infinite;
+    }
+    h2 {
+      color: lightblue;
+      text-align: center;
+      font-size: 5em;
       text-shadow: 5px 5px 10px black;
       animation: bounce 1s infinite;
     }
@@ -43,6 +52,7 @@
       display: flex;
       flex-direction: row;
       flex-wrap: wrap;
+      flex: 1 0 1;
       gap: 2rem;
       top: 10vh; /* move the container down by one viewport height */
     }
@@ -50,9 +60,22 @@
 </head>
 <body>
   <h1>monkey world</h1>
+  <h2>by preben</h2>
   <div class="container"> <!-- wrap the image in a container -->
     <img src="pix/monkey1.jfif" alt="Autumn picture" width="300" height="200">
     <img src="pix/monkey2.jfif" alt="Monkey cute" width="300" height="200">
+    <img src="pix/monkey3.jfif" alt="monkey cute2" width="300" height="200">
+    <img src="pix/monkey4.jfif" alt ="monkey jøde" width="300" height="200">
+    <img src="pix/monkey5.jfif" alt ="monkey boy" width="300" height="200">
+    <img src="pix/monkey6.jfif" alt ="monkey boy" width="300" height="200">
+    <img src="pix/monkey7.jfif" alt ="monkey boy" width="300" height="200">
+    <img src="pix/monkey8.jfif" alt ="monkey boy" width="300" height="200">
+    <img src="pix/monkey9.jfif" alt ="monkey boy" width="300" height="200">
+
+
+
+    
+
   </div>
 </body>
 </html>
