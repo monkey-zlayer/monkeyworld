@@ -2,6 +2,7 @@
 <html>
 <head>
   <title>monkey site</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <!-- Add some style using CSS -->
   <style>
     body {
@@ -55,6 +56,11 @@
       flex: 1 0 1;
       gap: 2rem;
       top: 10vh; /* move the container down by one viewport height */
+    }
+    @media screen and (max-width: 768px) {
+      h1 {
+        font-size: 7rem;
+      }
     }
   </style>
 </head>
