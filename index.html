@@ -1,0 +1,58 @@
+<!-- This is a website in HTML -->
+<html>
+<head>
+  <title>prebens monkey site</title>
+  <!-- Add some style using CSS -->
+  <style>
+    body {
+      background-image: url("https://cdn.pixabay.com/photo/2017/08/30/01/05/milky-way-2695569_960_720.jpg");
+      font-family: "Comic Sans MS", cursive, sans-serif;
+      animation: fade-in 2s;
+      height: 200vh; /* make the body height twice the viewport height */
+      margin: 0; /* remove the default margin */
+    }
+    h1 {
+      color: yellow;
+      text-align: center;
+      font-size: 10em;
+      text-shadow: 5px 5px 10px black;
+      animation: bounce 1s infinite;
+    }
+    img {
+      border: 10px dashed white;
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+      transform: scale(0.5);
+      transition: transform 0.5s;
+    }
+    img:hover {
+      transform: scale(1.5) rotate(360deg);
+    }
+    @keyframes fade-in {
+      from {opacity: 0;}
+      to {opacity: 1;}
+    }
+    @keyframes bounce {
+      0% {transform: translateY(0);}
+      50% {transform: translateY(-50px);}
+      100% {transform: translateY(0);}
+    }
+    .container {
+      position: relative; /* make the container relative to the body */
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      gap: 2rem;
+      top: 10vh; /* move the container down by one viewport height */
+    }
+  </style>
+</head>
+<body>
+  <h1>monkey world</h1>
+  <div class="container"> <!-- wrap the image in a container -->
+    <img src="pix/monkey1.jfif" alt="Autumn picture" width="300" height="200">
+    <img src="pix/monkey2.jfif" alt="Monkey cute" width="300" height="200">
+  </div>
+</body>
+</html>
