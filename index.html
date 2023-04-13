@@ -1,43 +1,44 @@
 <!-- This is a website in HTML -->
 <html>
+
 <head>
 
 </head>
+
 <head>
-  <title>My Website</title>
+  <title>monkey world </title>
   <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
   <link rel="icon" type="image/x-icon" href="/images/favicon.ico">
-</head>
-<body>
-  
-</body>
-  <title>monkey site</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <!-- Add some style using CSS -->
   <style>
+    h1 {
+      background-image: linear-gradient(to right, red, orange, yellow, green, blue, indigo, violet);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
 
-h1 {
-  background-image: linear-gradient(to right, red, orange, yellow, green, blue, indigo, violet);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
 
+    }
 
-}
     body {
       background-image: url("pix/R.jfif");
       background-repeat: repeat;
       background-size: 100% auto;
       font-family: "Comic Sans MS", cursive, sans-serif;
       animation: fade-in 2s;
-      height: 200vh; /* make the body height twice the viewport height */
-      margin: 0; /* remove the default margin */
+      height: 200vh;
+      /* make the body height twice the viewport height */
+      margin: 0;
+      /* remove the default margin */
     }
+
     p {
       text-align: center;
       font-size: 2em;
       color: white;
       text-shadow: 5px 5px 10px black;
     }
+
     h1 {
       color: yellow;
       text-align: center;
@@ -45,6 +46,7 @@ h1 {
       text-shadow: 5px 5px 10px black;
       animation: bounce 1s infinite;
     }
+
     h2 {
       color: lightblue;
       text-align: center;
@@ -52,9 +54,11 @@ h1 {
       text-shadow: 5px 5px 10px black;
       animation: bounce 1s infinite;
     }
+
     a {
       color: lightblue;
     }
+
     img {
       border: 10px dashed white;
       display: block;
@@ -63,27 +67,47 @@ h1 {
       transform: scale(0.5);
       transition: transform 0.5s;
     }
+
     img:hover {
       transform: scale(1.5) rotate(360deg);
     }
+
     @keyframes fade-in {
-      from {opacity: 0;}
-      to {opacity: 1;}
+      from {
+        opacity: 0;
+      }
+
+      to {
+        opacity: 1;
+      }
     }
+
     @keyframes bounce {
-      0% {transform: translateY(0);}
-      50% {transform: translateY(-50px);}
-      100% {transform: translateY(0);}
+      0% {
+        transform: translateY(0);
+      }
+
+      50% {
+        transform: translateY(-50px);
+      }
+
+      100% {
+        transform: translateY(0);
+      }
     }
+
     .container {
-      position: relative; /* make the container relative to the body */
+      position: relative;
+      /* make the container relative to the body */
       display: flex;
       flex-direction: row;
       flex-wrap: wrap;
       flex: 1 0 1;
       gap: 2rem;
-      top: 10vh; /* move the container down by one viewport height */
+      top: 10vh;
+      /* move the container down by one viewport height */
     }
+
     @media screen and (max-width: 768px) {
       h1 {
         font-size: 7rem;
@@ -100,19 +124,23 @@ h1 {
         background-image: none;
         background-color: black;
       }
+
       .monkeystuff {
         display: none;
       }
-      h1, h2 {
+
+      h1,
+      h2 {
         display: none;
       }
     </style>
   </noscript>
   <h1>monkey world</h1>
-  <h2>by <a href="https://discord.gg/DhACcC9XVg">Monkey-zlayer#0186</a> and <a href="https://odyssey346.dev">odyssey</a></h2>
- 
-</a>
-<div class="monkeystuff" x-data="{ monkeys: [
+  <h2>by <a href="https://discord.gg/DhACcC9XVg">Monkey-zlayer#0186</a> and <a href="https://odyssey346.dev">odyssey</a>
+  </h2>
+
+  </a>
+  <div class="monkeystuff" x-data="{ monkeys: [
   {
     monkeyAlt: 'Autumn picture', monkeySrc: 'pix/monkey1.jfif'
   },
@@ -201,9 +229,6 @@ h1 {
     monkeyAlt: 'monkey boy', monkeySrc: 'pix/monkey32.jfif'
   },
   {
-    monkeyAlt: 'monkey boy', monkeySrc: 'pix/monkey33.jfif'
-  },
-  {
     monkeyAlt: 'monkey boy', monkeySrc: 'pix/monkey34.jfif'
   },
   {
@@ -240,17 +265,18 @@ h1 {
     monkeyAlt: 'monkey boy', monkeySrc: 'pix/monkey45.jfif'
   }
 ]}">
-  <p>There are <span x-text="monkeys.length"></span> monkeys available.</p>
-  <div class="container">
-    <template x-for="monkey in monkeys" :key="monkey.monkeySrc">
-      <img :src="monkey.monkeySrc" :alt="monkey.monkeyAlt" width="300" height="200">
-    </template>
+    <p>There are <span x-text="monkeys.length"></span> monkeys available.</p>
+    <div class="container">
+      <template x-for="monkey in monkeys" :key="monkey.monkeySrc">
+        <img :src="monkey.monkeySrc" :alt="monkey.monkeyAlt" width="300" height="200">
+      </template>
+    </div>
   </div>
-</div>
-   
+
 
 
 
   </div>
 </body>
+
 </html>
