@@ -5,6 +5,7 @@
 </head>
 <head>
   <title>My Website</title>
+  <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
   <link rel="icon" type="image/x-icon" href="/images/favicon.ico">
 </head>
 <body>
@@ -30,6 +31,12 @@ h1 {
       animation: fade-in 2s;
       height: 200vh; /* make the body height twice the viewport height */
       margin: 0; /* remove the default margin */
+    }
+    p {
+      text-align: center;
+      font-size: 2em;
+      color: white;
+      text-shadow: 5px 5px 10px black;
     }
     h1 {
       color: yellow;
@@ -86,54 +93,160 @@ h1 {
 </head>
 
 <body>
+  <noscript>
+    <p style="font-size: 15rem; color: red; font-weight: 600;">Enable JavaScript to see this website</p>
+    <style>
+      body {
+        background-image: none;
+        background-color: black;
+      }
+      .monkeystuff {
+        display: none;
+      }
+      h1, h2 {
+        display: none;
+      }
+    </style>
+  </noscript>
   <h1>monkey world</h1>
   <h2>by <a href="https://discord.gg/DhACcC9XVg">Monkey-zlayer#0186</a> and <a href="https://odyssey346.dev">odyssey</a></h2>
  
 </a>
-  <div class="container"> <!-- wrap the image in a container -->
-    <img src="pix/monkey1.jfif" alt="Autumn picture" width="300" height="200">
-    <img src="pix/monkey2.jfif" alt="Monkey cute" width="300" height="200">
-    <img src="pix/monkey3.jfif" alt="monkey cute2" width="300" height="200">
-    <img src="pix/monkey4.jfif" alt ="monkey jøde" width="300" height="200">
-    <img src="pix/monkey5.jfif" alt ="monkey boy" width="300" height="200">
-    <img src="pix/monkey6.jfif" alt ="monkey boy" width="300" height="200">
-    <img src="pix/monkey7.jfif" alt ="monkey boy" width="300" height="200">
-    <img src="pix/monkey8.jfif" alt ="monkey boy" width="300" height="200">
-    <img src="pix/monkey9.jfif" alt ="monkey boy" width="300" height="200">
-    <img src="pix/monkey10.jfif" alt ="monkey boy" width="300" height="200">
-    <img src="pix/monkey11.jfif" alt ="monkey boy" width="300" height="200">
-    <img src="pix/monkey12.jfif" alt ="monkey boy" width="300" height="200">
-    <img src="pix/monkey13.jfif" alt ="monkey boy" width="300" height="200">
-    <img src="pix/monkey14.jfif" alt ="monkey boy" width="300" height="200">  
-    <img src="pix/monkey15.jfif" alt ="monkey boy" width="300" height="200">
-    <img src="pix/monkey16.jfif" alt ="monkey boy" width="300" height="200">  
-   <img src="pix/monkey17.jfif" alt ="monkey boy" width="300" height="200">
-   <img src="pix/monkey18.jfif" alt ="monkey boy" width="300" height="200">
-   <img src="pix/monkey19.jfif" alt ="monkey boy" width="300" height="200">
-   <img src="pix/monkey20.jfif" alt ="monkey boy" width="300" height="200">
-   <img src="pix/monkey21.jfif" alt ="monkey boy" width="300" height="200">
-   <img src="pix/monkey22.jfif" alt ="monkey boy" width="300" height="200">
-   <img src="pix/monkey26.jfif" alt ="monkey boy" width="300" height="200">
-   <img src="pix/monkey27.jfif" alt ="monkey boy" width="300" height="200">
-   <img src="pix/monkey28.jfif" alt ="monkey boy" width="300" height="200">
-   <img src="pix/monkey29.jfif" alt ="monkey boy" width="300" height="200">
-   <img src="pix/monkey30.jfif" alt ="monkey boy" width="300" height="200">
-   <img src="pix/monkey31.jfif" alt ="monkey boy" width="300" height="200">
-   <img src="pix/monkey32.jfif" alt ="monkey boy" width="300" height="200">
-   <img src="pix/monkey33.jfif" alt ="monkey boy" width="300" height="200">
-   <img src="pix/monkey34.jfif" alt ="monkey boy" width="300" height="200">
-   <img src="pix/monkey35.jfif" alt ="monkey boy" width="300" height="200">
-   <img src="pix/monkey36.jfif" alt ="monkey boy" width="300" height="200">
-   <img src="pix/monkey37.jfif" alt ="monkey boy" width="300" height="200">
-   <img src="pix/monkey38.jfif" alt ="monkey boy" width="300" height="200">
-   <img src="pix/monkey39.jfif" alt ="monkey boy" width="300" height="200">
-   <img src="pix/monkey40.jfif" alt ="monkey boy" width="300" height="200">
-   <img src="pix/monkey41.jfif" alt ="monkey boy" width="300" height="200">
-   <img src="pix/monkey42.jfif" alt ="monkey boy" width="300" height="200">
-   <img src="pix/monkey43.jfif" alt ="monkey boy" width="300" height="200">
-   <img src="pix/monkey44.jfif" alt ="monkey boy" width="300" height="200">
-   <img src="pix/monkey45.jfif" alt ="monkey boy" width="300" height="200">
-
+<div class="monkeystuff" x-data="{ monkeys: [
+  {
+    monkeyAlt: 'Autumn picture', monkeySrc: 'pix/monkey1.jfif'
+  },
+  {
+    monkeyAlt: 'Monkey cute', monkeySrc: 'pix/monkey2.jfif'
+  },
+  {
+    monkeyAlt: 'monkey cute2', monkeySrc: 'pix/monkey3.jfif'
+  },
+  {
+    monkeyAlt: 'monkey jøde', monkeySrc: 'pix/monkey4.jfif'
+  },
+  {
+    monkeyAlt: 'monkey boy', monkeySrc: 'pix/monkey5.jfif'
+  },
+  {
+    monkeyAlt: 'monkey boy', monkeySrc: 'pix/monkey6.jfif'
+  },
+  {
+    monkeyAlt: 'monkey boy', monkeySrc: 'pix/monkey7.jfif'
+  },
+  {
+    monkeyAlt: 'monkey boy', monkeySrc: 'pix/monkey8.jfif'
+  },
+  {
+    monkeyAlt: 'monkey boy', monkeySrc: 'pix/monkey9.jfif'
+  },
+  {
+    monkeyAlt: 'monkey boy', monkeySrc: 'pix/monkey10.jfif'
+  },
+  {
+    monkeyAlt: 'monkey boy', monkeySrc: 'pix/monkey11.jfif'
+  },
+  {
+    monkeyAlt: 'monkey boy', monkeySrc: 'pix/monkey12.jfif'
+  },
+  {
+    monkeyAlt: 'monkey boy', monkeySrc: 'pix/monkey13.jfif'
+  },
+  {
+    monkeyAlt: 'monkey boy', monkeySrc: 'pix/monkey14.jfif'
+  },
+  {
+    monkeyAlt: 'monkey boy', monkeySrc: 'pix/monkey15.jfif'
+  },
+  {
+    monkeyAlt: 'monkey boy', monkeySrc: 'pix/monkey16.jfif'
+  },
+  {
+    monkeyAlt: 'monkey boy', monkeySrc: 'pix/monkey17.jfif'
+  },
+  {
+    monkeyAlt: 'monkey boy', monkeySrc: 'pix/monkey18.jfif'
+  },
+  {
+    monkeyAlt: 'monkey boy', monkeySrc: 'pix/monkey19.jfif'
+  },
+  {
+    monkeyAlt: 'monkey boy', monkeySrc: 'pix/monkey20.jfif'
+  },
+  {
+    monkeyAlt: 'monkey boy', monkeySrc: 'pix/monkey21.jfif'
+  },
+  {
+    monkeyAlt: 'monkey boy', monkeySrc: 'pix/monkey22.jfif'
+  },
+  {
+    monkeyAlt: 'monkey boy', monkeySrc: 'pix/monkey26.jfif'
+  },
+  {
+    monkeyAlt: 'monkey boy', monkeySrc: 'pix/monkey27.jfif'
+  },
+  {
+    monkeyAlt: 'monkey boy', monkeySrc: 'pix/monkey28.jfif'
+  },
+  {
+    monkeyAlt: 'monkey boy', monkeySrc: 'pix/monkey29.jfif'
+  },
+  {
+    monkeyAlt: 'monkey boy', monkeySrc: 'pix/monkey30.jfif'
+  },
+  {
+    monkeyAlt: 'monkey boy', monkeySrc: 'pix/monkey31.jfif'
+  },
+  {
+    monkeyAlt: 'monkey boy', monkeySrc: 'pix/monkey32.jfif'
+  },
+  {
+    monkeyAlt: 'monkey boy', monkeySrc: 'pix/monkey33.jfif'
+  },
+  {
+    monkeyAlt: 'monkey boy', monkeySrc: 'pix/monkey34.jfif'
+  },
+  {
+    monkeyAlt: 'monkey boy', monkeySrc: 'pix/monkey35.jfif'
+  },
+  {
+    monkeyAlt: 'monkey boy', monkeySrc: 'pix/monkey36.jfif'
+  },
+  {
+    monkeyAlt: 'monkey boy', monkeySrc: 'pix/monkey37.jfif'
+  },
+  {
+    monkeyAlt: 'monkey boy', monkeySrc: 'pix/monkey38.jfif'
+  },
+  {
+    monkeyAlt: 'monkey boy', monkeySrc: 'pix/monkey39.jfif'
+  },
+  {
+    monkeyAlt: 'monkey boy', monkeySrc: 'pix/monkey40.jfif'
+  },
+  {
+    monkeyAlt: 'monkey boy', monkeySrc: 'pix/monkey41.jfif'
+  },
+  {
+    monkeyAlt: 'monkey boy', monkeySrc: 'pix/monkey42.jfif'
+  },
+  {
+    monkeyAlt: 'monkey boy', monkeySrc: 'pix/monkey43.jfif'
+  },
+  {
+    monkeyAlt: 'monkey boy', monkeySrc: 'pix/monkey44.jfif'
+  },
+  {
+    monkeyAlt: 'monkey boy', monkeySrc: 'pix/monkey45.jfif'
+  }
+]}">
+  <p>There are <span x-text="monkeys.length"></span> monkeys available.</p>
+  <div class="container">
+    <template x-for="monkey in monkeys" :key="monkey.monkeySrc">
+      <img :src="monkey.monkeySrc" :alt="monkey.monkeyAlt" width="300" height="200">
+    </template>
+  </div>
+</div>
    
 
 
